@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML-Debrief | Contact</title>
+		<!-- Style for form -->
+		<style>
+			form {
+				display: table;
+			}
+			form div {
+				display: table-row;
+			}
+
+			form label {
+				font-weight: bold;
+			}
+
+			form input,
+			form label,
+			form fieldset {
+				display: table-cell;
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="https://google.com" method="post" class="form">
+			<!-- Inputs field -->
+			<div class="form">
+				<label for="name">Name </label>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Enter your name"
+				/>
+			</div>
+			<div class="form">
+				<label for="email">Email </label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Enter your email"
+				/>
+			</div>
+			<div class="form">
+				<label for="telephone">Telephone </label>
+				<input
+					type="tel"
+					name="telephone"
+					id="telephone"
+					placeholder="Enter your telephone/mobile"
+				/>
+			</div>
+			<!-- Radio button field -->
+			<div class="form">
+				<label for="radio">Radio buttons</label>
+				<fieldset>
+					<legend>Have you finished all the fields?</legend>
+					<label><input type="radio" name="finish" value="yes" />Yes</label>
+					<label><input type="radio" name="finish" value="no" />No</label>
+				</fieldset>
+			</div>
+
+			<!-- Checkboxes field -->
+			<div class="form">
+				<label for="checkbox">Checkboxes</label>
+				<fieldset>
+					<legend>If not, what is the field you have not done</legend>
+					<div class="form">
+						<input type="checkbox" name="name" id="name-check" />
+						<label for="name">Name</label>
+					</div>
+					<div class="form">
+						<input type="checkbox" name="email" id="email-check" />
+						<label for="email">Email</label>
+					</div>
+					<div class="form">
+						<input type="checkbox" name="telephone" id="telephone-check" />
+						<label for="telephone">Telephone</label>
+					</div>
+				</fieldset>
+			</div>
+
+			<!-- Submit button -->
+			<div class="form">
+				<input type="submit" value="Submit Form" />
+			</div>
+		</form>
+
+		<br />
+
+		<a href="./index.html">Home page</a>
+	</body>
+</html>
